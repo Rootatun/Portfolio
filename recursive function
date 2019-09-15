@@ -1,0 +1,16 @@
+<meta charset ="utf-8">
+<script type ="text/javascript">
+
+	var f = +prompt("Введите число для поиска его факториала");
+	
+	function recursiveFactorial(n){
+		if(n == 0)
+			return 1;
+
+		else
+			return recursiveFactorial(n-1) * n;
+	}
+
+	var rf = recursiveFactorial(f);
+	alert("Произведение всех натуральных чисел от 0 до " + f + " равно " + rf);
+</script>
